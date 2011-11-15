@@ -1,11 +1,11 @@
 <?php
 /*
    Plugin Name: Multi Currency Lite For Jigoshop
-   Plugin URI: 
+   Plugin URI: https://github.com/steveclarkcouk/Currency-Converter-Jigoshop
    Description: Add multi currencies to your Jigoshop Store
    Version: 1.1
    Author: Steve Clark
-   Author URI: www.the-escape.co.uk
+   Author URI: http://www.the-escape.co.uk
  */
 
 include 'constants.php';
