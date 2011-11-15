@@ -170,6 +170,7 @@ class Jigoshop_Mutli_Currency_Admin extends Jigoshop_Mutli_Currency
 				<ul class="tabs">
 					<li><a href="#tab1">General Settings</a></li>
 					<li><a href="#tab2">Enabled Currencies</a></li>
+					<li><a href="#tab3">Donate</a></li>
 				</ul>
 				
 				<div id="tab1" class="panel">
@@ -267,6 +268,18 @@ class Jigoshop_Mutli_Currency_Admin extends Jigoshop_Mutli_Currency
 							</tbody>
 						</table>
 
+				</div>
+				
+				<div id="tab3" class="panel">
+						<!-- Cheeky I Know But Hey Why Not! -->
+						<form action="https://www.paypal.com/cgi-bin/webscr" method="post" style="border:2px double #333; background:#eee; padding:15px; width:20%; float:right;">
+							<input type="hidden" name="cmd" value="_s-xclick">
+							<input type="hidden" name="hosted_button_id" value="VAX9GTEKJ9WSA">
+							<h2>Do you like this? Then buy me a beer?</h2>
+							<p>If you like this plugin and use it then why not buy me a beer in support of it - I would really appreciate</p>
+							<input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal ó The safer, easier way to pay online.">
+							<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+						</form>
 				</div>
 			</div>
 			
