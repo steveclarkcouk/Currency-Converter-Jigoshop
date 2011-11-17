@@ -9,7 +9,7 @@
  */
 
 include 'constants.php';
-include 'classes/jigoshop-currecncy-class.php';
+include 'classes/jigoshop-currency-class.php';
 include 'classes/jigoshop-currency-converter.php';
 
 // --- Admin Builder
