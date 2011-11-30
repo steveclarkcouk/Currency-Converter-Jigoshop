@@ -1,5 +1,21 @@
 === Jigoshop Multi Currency ===
 
+== V1.1 ===
+
+Because of the load_template call the cart conversion was being based on a singular product rather that the entire cart. To avoid this issue in the render method of the class
+I have made two new functions (see below). 
+
+New Function Calls
+==================
+<?php jigoshop_currency_product_conversion(); ?> - This adds the currency conversion dialog and does the conversion based on the current product
+<?php jigoshop_currency_cart_conversion(); ?> - This adds the currency conversion dialog and does the conversion based on the current cart contents
+
+Deprecated
+===========
+<?php jigoshop_currency_convert(); ?> is no longer supported as in the cart the post global loses scope. so to peform conversions now you will need to do the following:
+
+== v1.0 ==
+
 == Description ==
 A simple plugin which allows for the display of alternate currencies on the product view and the cart view. The plugin uses Yahoo Finance to grab all of its base exchange rates.
 This is an offspring of a bigger project I am working on to get Jigoshop 100% multi currency enabled.

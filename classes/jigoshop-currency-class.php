@@ -192,7 +192,7 @@ class Jigoshop_Mutli_Currency_Admin extends Jigoshop_Mutli_Currency
 
 							<tr>
 								<td>
-									<strong>Auto Add Conversions To Single Product Pages</strong><br/>This will add the conversion prices underneath the main base currency price. If you wish to add this manually use:<br/> <code>&lt;?php jigoshop_currency_convert(); ?&gt;</code>
+									<strong>Auto Add Conversions To Single Product Pages</strong><br/>This will add the conversion prices underneath the main base currency price. If you wish to add this manually use:<br/> <code>&lt;?php jigoshop_currency_product_conversion(); ?&gt;</code>
 								</td>
 								<td>
 									<select name="<?php echo $this->data['prefix'] . "add_to_single_summary"; ?>">
@@ -204,7 +204,7 @@ class Jigoshop_Mutli_Currency_Admin extends Jigoshop_Mutli_Currency
 							
 							<tr>
 								<td>
-									<strong>Auto Add Conversions To Cart page above the billing form (Lack of Hooks)</strong><br/>If you wish to add this manually use:<br/> <code>&lt;?php jigoshop_currency_convert(); ?&gt;</code>
+									<strong>Auto Add Conversions To Cart page above the billing form (Lack of Hooks)</strong><br/>If you wish to add this manually use:<br/> <code>&lt;?php jigoshop_currency_cart_conversion(); ?&gt;</code>
 								</td>
 								<td>
 									<select name="<?php echo $this->data['prefix'] . "add_to_cart_auto"; ?>">

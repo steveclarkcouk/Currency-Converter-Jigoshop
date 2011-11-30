@@ -27,10 +27,17 @@ $currency_converter = new currency_converter();
 $currency_converter->data = $jmc_admin->data;
 
 // -- Manual Call For Currency Convert
-function jigoshop_currency_convert()
+function jigoshop_currency_product_conversion()
 {
 	global $currency_converter;
-	$currency_converter->render();
+	echo $currency_converter->add_conversion_prices();
+}
+
+// -- Manual Call For Currency Convert
+function jigoshop_currency_cart_conversion()
+{
+	global $currency_converter;
+	echo $currency_converter->add_cart_conversion_prices();
 }
 
 // -- Check The Cache And Rebuild From Yahoo If Necessary
@@ -38,12 +45,12 @@ add_action('wp_head', array($currency_converter, 'check_caches'));
 
 // -- [ Action to add currency converted values to product page ]
 if(get_option($prefix . 'add_to_single_summary')) {
-	add_action('jigoshop_template_single_summary', 'jigoshop_currency_convert');
+	add_action('jigoshop_template_single_summary', 'jigoshop_currency_product_conversion');
 	}
 
 // -- [ Action to add currency converted to cart, Gulp! ]
 if(get_option($prefix . 'add_to_cart_auto')) {
-	add_action('after_checkout_form',  'jigoshop_currency_convert');
+	add_action('after_checkout_form',  'jigoshop_currency_cart_conversion');
 	}
 
 
